@@ -25,9 +25,9 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E           &kp R             &kp T               &kp LEFT_ALT      &kp PAGE_UP    &kp Y                &kp U              &kp I                    &kp O    &kp P     &kp BSPC
-&kp TAB     &kp A  &kp S  &mt LEFT_ALT D  &mt LEFT_SHIFT F  &mt LEFT_CONTROL G  &kp LEFT_CONTROL  &kp PAGE_DOWN  &mt RIGHT_CONTROL H  &mt RIGHT_SHIFT J  &mt RIGHT_ALT RIGHT_ALT  &kp L    &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z  &kp X  &kp C           &kp V             &kp B                                                &kp N                &kp M              &kp COMMA                &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+&kp ESCAPE  &kp Q  &kp W  &kp E           &kp R             &kp T               &kp LEFT_ALT      &kp PAGE_UP    &kp Y                &kp U              &kp I            &kp O    &kp P     &kp BSPC
+&kp TAB     &kp A  &kp S  &mt LEFT_ALT D  &mt LEFT_SHIFT F  &mt LEFT_CONTROL G  &kp LEFT_CONTROL  &kp PAGE_DOWN  &mt RIGHT_CONTROL H  &mt RIGHT_SHIFT J  &mt RIGHT_ALT K  &kp L    &kp SEMI  &kp SQT
+&kp LSHFT   &kp Z  &kp X  &kp C           &kp V             &kp B                                                &kp N                &kp M              &kp COMMA        &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                           &kp LGUI        &mo 1             &kp RETURN                                           &kp SPACE            &mo 2              &kp RGUI
             >;
         };
