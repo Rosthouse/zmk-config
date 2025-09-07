@@ -17,13 +17,6 @@
 
         base_layer {
             display-name = "BASE";
-
-            // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |  MUTE |  PP   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |  LALT |  RALT |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |               |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
-
             bindings = <
 &kp ESCAPE  &kp Q  &kp W  &kp E           &kp R             &kp T               &kp LEFT_ALT      &kp PAGE_UP    &kp Y                &kp U              &kp I            &kp O    &kp P     &kp BSPC
 &kp TAB     &kp A  &kp S  &mt LEFT_ALT D  &mt LEFT_SHIFT F  &mt LEFT_CONTROL G  &kp LEFT_CONTROL  &kp PAGE_DOWN  &mt RIGHT_CONTROL H  &mt RIGHT_SHIFT J  &mt RIGHT_ALT K  &kp L    &kp SEMI  &kp SQT
@@ -34,30 +27,16 @@
 
         lower_layer {
             display-name = "LOWER";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5    |  LCTRL | RCTRL |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | CTRL | BT1 | BT2 | BT3 | BT4 | BT5   |  LALT  | RALT  | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT | BTCR| RGB | RST | BOOT| Unlock|        |       |     |     |     |     |     |      |
-            //                    | GUI |     | SPC   |        | ENT   |     | ALT |
-
             bindings = <
-&trans  &kp N1          &kp UP_ARROW    &kp N3           &kp N4  &kp N5          &trans  &trans  &kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &kp KP_MINUS  &kp DEL
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &none           &trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &kp KP_PLUS   &trans
-&trans  &none           &none           &none            &none   &studio_unlock                  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0           &kp KP_DOT    &trans
-                                        &trans           &trans  &trans                          &trans        &trans        &trans
+&trans  &kp N1          &kp UP_ARROW    &kp N3           &kp N4  &kp N5          &trans  &trans  &kp KP_DIVIDE    &kp N7        &kp N8        &kp N9        &kp KP_MINUS  &kp DEL
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &none           &trans  &trans  &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS   &trans
+&trans  &none           &none           &none            &none   &studio_unlock                  &kp N0           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT    &trans
+                                        &trans           &trans  &trans                          &trans           &trans        &trans
             >;
         };
 
         raise_layer {
             display-name = "SYMBOL";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  | LCTRL | RCTRL |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |     |     |     |     |     |  LALT | RALT  |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |               |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |               | ENT |     | ALT |
-
             bindings = <
 &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &trans  &trans  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &trans  &trans    &trans  &trans    &trans    &trans     &trans  &trans  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
