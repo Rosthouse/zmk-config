@@ -33,6 +33,116 @@
         };
     };
 
+    behaviors {
+        nbfn_1: nbfn_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NBFN_1";
+            bindings = <&kp NUMBER_1>, <&kp F1>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nbfn_2: nbfn_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NBFN_2";
+            bindings = <&kp NUMBER_2>, <&kp F2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nbfn_3: nbfn_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NBFN_3";
+            bindings = <&kp NUMBER_3>, <&kp F3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nbfn_4: nbfn_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NBFN_4";
+            bindings = <&kp NUMBER_4>, <&kp F4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nbfn_5: nbfn_5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NBFN_5";
+            bindings = <&kp N5>, <&kp F5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nbfn_6: nbfn_6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NBFN_6";
+            bindings = <&kp NUMBER_6>, <&kp F6>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nbfn_7: nbfn_7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NBFN_7";
+            bindings = <&kp N7>, <&kp F7>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nbfn_8: nbfn_8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NBFN_8";
+            bindings = <&kp N8>, <&kp F8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nbfn_9: nbfn_9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NBFN_9";
+            bindings = <&kp N9>, <&kp F8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dfn_10: dfn_10 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DFN_10";
+            bindings = <&kp DOT>, <&kp F10>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        pfn_11: pfn_11 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PFN_11";
+            bindings = <&kp PLUS>, <&kp F11>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mfn_12: mfn_12 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MFN_12";
+            bindings = <&kp MINUS>, <&kp F12>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -49,10 +159,10 @@
         lower_layer {
             display-name = "LOWER";
             bindings = <
-&trans  &kp N1          &kp UP_ARROW    &kp N3           &kp N4  &kp N5          &trans  &trans  &kp KP_DIVIDE    &kp N7        &kp N8        &kp N9        &kp KP_MINUS  &kp DEL
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &none           &trans  &trans  &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS   &trans
-&trans  &none           &none           &none            &none   &studio_unlock                  &kp N0           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT    &trans
-                                        &trans           &trans  &trans                          &trans           &trans        &trans
+&trans  &kp N1          &kp UP_ARROW    &kp N3           &kp N4  &kp N5          &trans  &trans  &kp KP_DIVIDE    &nbfn_7  &nbfn_8  &nbfn_9  &mfn_12  &kp DEL
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &none           &trans  &trans  &kp KP_MULTIPLY  &nbfn_4  &nbfn_5  &nbfn_6  &pfn_11  &trans
+&trans  &none           &none           &none            &none   &studio_unlock                  &kp N0           &nbfn_1  &nbfn_2  &nbfn_3  &dfn_10  &trans
+                                        &trans           &trans  &trans                          &trans           &trans   &trans
             >;
         };
 
@@ -75,17 +185,6 @@
             >;
 
             label = "Config";
-        };
-
-        functional {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-
-            label = "Functional";
         };
     };
 
