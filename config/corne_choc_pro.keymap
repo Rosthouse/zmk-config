@@ -149,10 +149,10 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E           &kp R               &kp T       &kp LEFT_ALT      &kp PAGE_UP    &kp Y      &kp U                &kp I            &kp O    &kp P     &kp BSPC
-&kp TAB     &kp A  &kp S  &mt LEFT_ALT D  &mt LEFT_SHIFT F    &kp G       &kp LEFT_CONTROL  &kp PAGE_DOWN  &kp H      &mt RIGHT_SHIFT J    &mt RIGHT_ALT K  &kp L    &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z  &kp X  &kp C           &mt LEFT_CONTROL V  &kp B                                        &kp N      &mt RIGHT_CONTROL M  &kp COMMA        &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                          &kp LGUI        &mo 1               &kp RETURN                                   &kp SPACE  &mo 2                &kp RGUI
+&kp ESCAPE  &kp Q  &kp W  &kp E           &kp R               &kp T                 &kp LEFT_ALT      &kp PAGE_UP    &kp Y      &kp U                &kp I            &kp O    &kp P     &kp BSPC
+&kp TAB     &kp A  &kp S  &mt LEFT_ALT D  &mt LEFT_SHIFT F    &kp G                 &kp LEFT_CONTROL  &kp PAGE_DOWN  &kp H      &mt RIGHT_SHIFT J    &mt RIGHT_ALT K  &kp L    &kp SEMI  &kp SQT
+&kp LSHFT   &kp Z  &kp X  &kp C           &mt LEFT_CONTROL V  &kp B                                                  &kp N      &mt RIGHT_CONTROL M  &kp COMMA        &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                          &kp LGUI        &mo 1               &mt LEFT_SHIFT ENTER                                   &kp SPACE  &mo 2                &kp RGUI
             >;
         };
 
@@ -178,10 +178,10 @@
 
         config {
             bindings = <
-&trans  &trans  &trans  &trans  &trans        &trans      &trans  &trans  &trans        &trans        &trans        &trans          &trans  &trans
-&trans  &trans  &trans  &trans  &trans        &trans      &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR_ALL  &trans  &trans
-&trans  &trans  &trans  &trans  &bl BL_CYCLE  &bl BL_TOG                  &sys_reset    &bootloader   &trans        &trans          &trans  &trans
-                        &trans  &trans        &trans                      &trans        &trans        &trans
+&trans  &trans  &trans  &trans      &trans        &trans      &trans  &trans  &trans        &trans        &trans        &trans          &trans  &trans
+&trans  &trans  &trans  &trans      &trans        &trans      &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR_ALL  &trans  &trans
+&trans  &trans  &trans  &sys_reset  &bl BL_CYCLE  &bl BL_TOG                  &sys_reset    &bootloader   &trans        &trans          &trans  &trans
+                        &trans      &trans        &trans                      &trans        &trans        &trans
             >;
 
             label = "Config";
