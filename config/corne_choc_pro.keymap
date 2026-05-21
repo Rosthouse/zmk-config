@@ -159,10 +159,10 @@
         lower_layer {
             display-name = "LOWER";
             bindings = <
-&trans  &kp N1          &kp UP_ARROW    &kp N3           &kp N4  &kp N5          &trans  &trans  &kp KP_DIVIDE    &nbfn_7  &nbfn_8  &nbfn_9  &mfn_12  &kp DEL
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &none           &trans  &trans  &kp KP_MULTIPLY  &nbfn_4  &nbfn_5  &nbfn_6  &pfn_11  &trans
-&trans  &none           &none           &none            &none   &studio_unlock                  &kp N0           &nbfn_1  &nbfn_2  &nbfn_3  &dfn_10  &trans
-                                        &trans           &trans  &trans                          &trans           &trans   &trans
+&trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &kp KP_SLASH     &trans  &trans  &kp INS   &kp HOME  &kp END  &nbfn_9    &trans  &kp DEL
+&trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_ASTERISK  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans  &trans
+&trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0  &studio_unlock                   &trans    &trans    &trans   &trans     &trans  &trans
+                                          &trans           &trans           &trans                           &trans    &trans    &trans
             >;
         };
 
