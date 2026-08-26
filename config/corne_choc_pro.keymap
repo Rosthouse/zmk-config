@@ -154,6 +154,7 @@
 &kp LSHFT   &kp Z  &kp X  &kp C           &mt LEFT_CONTROL V  &kp B                                                  &kp N      &mt RIGHT_CONTROL M  &kp COMMA        &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                           &kp LGUI        &mo 1               &mt LEFT_SHIFT ENTER                                   &kp SPACE  &mo 2                &kp RGUI
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         lower_layer {
