@@ -149,10 +149,10 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E           &kp R               &kp T                 &kp PAGE_DOWN     &kp PAGE_UP    &kp Y      &kp U                &kp I            &kp O    &kp P     &kp DEL
-&kp TAB     &kp A  &kp S  &mt LEFT_ALT D  &mt LEFT_SHIFT F    &kp G                 &kp LEFT_BRACKET  &kp PAGE_DOWN  &kp H      &mt RIGHT_SHIFT J    &mt RIGHT_ALT K  &kp L    &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z  &kp X  &kp C           &mt LEFT_CONTROL V  &kp B                                                  &kp N      &mt RIGHT_CONTROL M  &kp COMMA        &kp DOT  &kp FSLH  &kp GRAVE
-                          &kp LGUI        &mo 1               &mt LEFT_SHIFT ENTER                                   &kp SPACE  &mo 2                &kp BACKSPACE
+&kp ESCAPE  &kp Q  &kp W  &kp E           &kp R               &kp T                 &kp PAGE_DOWN     &kp PAGE_UP        &kp Y      &kp U                &kp I            &kp O    &kp P     &kp DEL
+&kp TAB     &kp A  &kp S  &mt LEFT_ALT D  &mt LEFT_SHIFT F    &kp G                 &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp H      &mt RIGHT_SHIFT J    &mt RIGHT_ALT K  &kp L    &kp SEMI  &kp SQT
+&kp LSHFT   &kp Z  &kp X  &kp C           &mt LEFT_CONTROL V  &kp B                                                      &kp N      &mt RIGHT_CONTROL M  &kp COMMA        &kp DOT  &kp FSLH  &kp GRAVE
+                          &kp LGUI        &mo 1               &mt LEFT_SHIFT ENTER                                       &kp SPACE  &mo 2                &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_VOL_DN C_VOL_UP>;
